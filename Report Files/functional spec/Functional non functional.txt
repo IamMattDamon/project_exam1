@@ -1,0 +1,30 @@
+Functional: 
+The system must (statements)
+- Allow customers to get in touch via a contact form
+- Allow users to easily browse through images and videos
+- Have an easy access menu for navigating through the site
+- Allow text input in forms
+- Have an appealing color palette and fonts to match the target audience
+- Apply top notch SEO
+- Display a promotional video for the Hubble Telescope
+- Focus on this being the 30th anniversary for the Hubble Telescope
+- Comply with the legal requirements of a business and follow the regulations of its governing body
+- Use simple language to make it user friendly and easy to nagivate through
+- Have great consideration for WCGAA(or whatever its called)
+- Have a subscription feature, where customers can submit their email address
+- Have a twitter feed and a RSA feed taken from NASA API
+
+Non-functional:
+The system must (statements)
+
+- Have performance parameters
+- Have recoverability
+- Allow forms to have text input and styled buttons (cta)
+- Be secure (https)
+- Scale correctly for various screensizes
+- Be responsive
+- Have cookies and privacy policies displayed
+- Be easy to maintain
+- Be reliable
+- Have good capacity
+

@@ -1,0 +1,9 @@
+#070000 - Diesel (Black)
+#01012B - Black Rock (Blue)
+#005678 - Orient (Light Blue)
+#05D9E8 - Bright Turquoise
+#D1F7FF - Onahau (Clear Sky Blue)
+#FFFFFF - White
+#A6033F - Shiraz (Pink/Red)
+#8B58BC - Fuchsia Blue (Light Purple)
+#FF1493 - Deep Pink (Fluorescent)

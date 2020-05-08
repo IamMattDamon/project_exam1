@@ -1,0 +1,10 @@
+1. Planning
+2. Systems Analysis & Requirements
+
+Product vision: Highlight the history about the Hubble Telescope, technical features, the 30th anniversary and all amazing images it has taken throughout the years.
+
+Decomposing a vision: 1. Identify themes - Examples:
+
+Images, News, Videos, History, (Profile)
+
+Features: Search, Menu, Favorites, (Log-in)
