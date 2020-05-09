@@ -1,4 +1,4 @@
-/*************** COLORS *************
+/************* COLORS *************
 #070000 - Diesel (Black)
 #01012B - Black Rock (Blue)
 #005678 - Orient (Light Blue)
@@ -8,14 +8,14 @@
 #A6033F - Shiraz (Pink/Red)
 #FF1493 - Deep Pink (Fluorescent)
 #8B58BC - Fuchsia Blue (Light Purple)
-/************************************/
+************************************/
 
 /********* Global - Buttons ********/
 a.button1 {
     display: inline-block;
     padding: 0.3em 1.2em;
     margin: 0 0.2em 0.2em 0;
-    border: 0.25em solid #05D9E8;
+    border: 0.15em solid #05D9E8;
     border-radius: 0.5em;
     box-sizing: border-box;
     text-decoration: none;
@@ -27,10 +27,28 @@ a.button1 {
     background-color: #070000;
 }
 a.button1:hover {
-    
+    background-color: #05D9E8;
+    color: #070000;
+    transition: ease-in 0.3s;
+    font-weight: 900;
 }
-
 /***********************************/
+
+/********* Global -  Box Sizing ********/
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+/***************************************/
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    max-width: 100%;
+    background-color: #070000;
+}
 
 
 /***************************
@@ -38,8 +56,49 @@ a.button1:hover {
 ****************************/
 
 /********* Header *********/
+.header-container {
+    background-color: #070000;
+}
+.header-logo img {
+    height: auto;
+    max-width: 320px;
+}
+.header-logo {
+    display: flex;
+    justify-content: center;
+}
+.menu ul li {
+    text-decoration: none;
+    padding: 2px 0 2px 0;
+}
+.menu a {
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+.current a {
+    color: #A6033F;
+}
+.menu a:hover {
+    color: #A6033F;
+}
+.menu ul {
+    padding: 0;
+    list-style-type: none;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+}
 
 /********* Banner *********/
+.banner {
+    background: url('../images/background3.jpg');
+    background-size: cover;
+    min-height: 200px;
+}
 
 /********* Launch *********/
 
@@ -48,3 +107,19 @@ a.button1:hover {
 /********* Live/Quiz *********/
 
 /********* Resources *********/
+
+/***************************
+******** IMAGE PAGE ********
+****************************/
+
+/***************************
+******* VIDEOS PAGE ********
+****************************/
+
+/***************************
+******** NEWS PAGE ********
+****************************/
+
+/***************************
+******* CONTACT PAGE *******
+****************************/
