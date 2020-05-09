@@ -10,7 +10,41 @@
 #8B58BC - Fuchsia Blue (Light Purple)
 /************************************/
 
-/****** Global - Fonts *****/
+/********* Global - Buttons ********/
+a.button1 {
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 0.2em 0.2em 0;
+    border: 0.25em solid #05D9E8;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    color: #05D9E8;
+    text-align: center;
+    transition: ease-in 0.2s;
+    background-color: #070000;
+}
+a.button1:hover {
+    
+}
+
+/***********************************/
 
 
-/***************************/
+/***************************
+******** INDEX PAGE ********
+****************************/
+
+/********* Header *********/
+
+/********* Banner *********/
+
+/********* Launch *********/
+
+/********* Timeline *********/
+
+/********* Live/Quiz *********/
+
+/********* Resources *********/
