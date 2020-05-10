@@ -12,8 +12,9 @@
 
 /********* Global - Buttons ********/
 a.button1 {
-    display: inline-block;
-    padding: 0.3em 1.2em;
+    display: flex;
+    justify-items: center;
+    padding: 0.3em 0.2em;
     margin: 0 0.2em 0.2em 0;
     border: 0.15em solid #05D9E8;
     border-radius: 0.5em;
@@ -25,6 +26,7 @@ a.button1 {
     text-align: center;
     transition: ease-in 0.2s;
     background-color: #070000;
+    width: fit-content;
 }
 a.button1:hover {
     background-color: #05D9E8;
@@ -50,10 +52,12 @@ body {
 h1 {
     font-family: 'Orbitron', sans-serif;
     font-weight: 900;
+    display: flex;
 }
 h2 {
     font-family: 'Orbitron', sans-serif;
     font-weight: 700;
+    display: flex;
 }
 
 
@@ -61,7 +65,7 @@ h2 {
 ******** INDEX PAGE ********
 ****************************/
 
-/********* Header *********/
+/********* Header1 *********/
 .header-container {
     background-color: #070000;
 }
@@ -83,7 +87,7 @@ h2 {
     text-decoration: none;
     font-family: 'Orbitron', sans-serif;
     font-weight: 900;
-    font-size: 24px;
+    font-size: 20px;
     color: #FFFFFF;
 }
 .current a {
@@ -102,9 +106,11 @@ h2 {
 }
 
 /********* Banner *********/
+
 .banner {
     background: url('../images/background4.jpg');
     background-size: cover;
+    background-position: center;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -114,8 +120,6 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-
 }
 .banner-txt h1 {
     background-color: rgba(108, 24, 119, 0.33);
@@ -125,17 +129,18 @@ h2 {
     justify-content: center;
     color: #FFFFFF;
     margin: 0;
-    font-size: 30px;
-    margin: 0;
+    font-size: 24px;
 }
 .banner-txt h2 {
     text-align: center;
     color: #FFFFFF;
-    background-color: rgba(53, 53, 53, 0.255);
+    background-color: rgba(37, 37, 37, 0.534);
+    display: flex;
+    justify-content: center;    
 }
 
 .banner-txt h2 {
-    font-size: 20px;
+    font-size: 16px;
 }
 .bannerbtn {
     display: flex;
@@ -152,12 +157,41 @@ h2 {
     background: url('../images/spacebackground.png');
     background-size: cover;
     z-index: 1;
-    width: 100%;
     height: 1000px;
-    margin-top: 25px;
 }
 /********* Launch *********/
-
+.launch-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    background-color: #070000;
+    border-radius: 5px;
+    margin: 1em 0;
+    width: 100%;
+}
+#launch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+}
+.centered {
+    display: flex;
+    justify-content: center;
+}
+.centered h1 {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+#countdown-js {
+    margin: 5px 5px 10px 5px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.margin_bottom {
+    margin-bottom: 25px;
+}
 
 /********* Timeline *********/
 
