@@ -73,7 +73,7 @@ p {
 ******** INDEX PAGE ********
 ****************************/
 
-/********* Header1 *********/
+/********* Header *********/
 .header-container {
     background-color: #070000;
 }
@@ -113,6 +113,10 @@ p {
     justify-content: center;
 }
 
+/********* Footer *********/
+footer {
+    display: flex;
+}
 /********* Banner *********/
 
 .banner {
@@ -122,6 +126,7 @@ p {
     z-index: 1;
     display: flex;
     flex-direction: column;
+    height: 320px;
 }
 .banner-txt {
     z-index: 2;
@@ -129,6 +134,7 @@ p {
     flex-direction: column;
     justify-content: center;
     height: 320px;
+    
 }
 .bannerh1 {
     background-color: rgba(108, 24, 119, 0.33);
@@ -163,7 +169,6 @@ p {
     background: url('../images/spacebackground.png');
     background-size: cover;
     z-index: 1;
-    height: 1000px;
 }
 /********* Launch *********/
 .background-container {
