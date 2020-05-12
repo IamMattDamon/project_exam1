@@ -68,7 +68,10 @@ p {
     font-weight: 300;
     font-size: 12px;
 }
-
+.dots {
+    height: 40px;
+    width: 60px;
+}
 /***************************
 ******** INDEX PAGE ********
 ****************************/
@@ -114,16 +117,25 @@ p {
 }
 
 /********* Footer *********/
+.col {
+    display: flex;
+    flex-direction: column;
+}
 .footer_content {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
     margin-bottom: 25px;
+    justify-content: center;
 }
-
 .socmedimg {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
+    padding: 5px 5px;
+}
+.footer_list {
+    margin: 0 auto;
+    padding-inline-start: 0;
 }
 .socialmedia {
     flex-direction: row;
@@ -137,6 +149,10 @@ p {
     flex-direction: column;
     justify-content: center;
     padding: 5px 20px 5px 20px;
+}
+.newsletter-container h3 {
+    font-weight: 400;
+    font-size: 16px;
 }
 input[type=text], input[type=submit], input[type=email] {
     width: 100%;
@@ -175,6 +191,7 @@ hr.pex {
 }
 .footer_list li {
     list-style-type: none;
+    padding: 5px 0 5px 0;
 }
 .footer_list li a {
     text-decoration: none;
@@ -186,10 +203,25 @@ hr.pex {
     color: #05D9E8;
     transition: 0.3s ease-in;
 }
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer_content2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+h3.centered.white {
+    margin-top: 0;
+}
 /********* Banner *********/
 
 .banner {
-    background: url('../images/hubbleimg6.jpg');
+    background: url('../images/background4.jpg');
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -218,7 +250,7 @@ hr.pex {
 .bannerh2 {
     text-align: center;
     color: #FFFFFF;
-    background-color: rgba(15, 15, 15, 0.33);
+    background-color: rgba(15, 15, 15, 0.63);
     display: flex;
     justify-content: center;  
     font-size: 20px;  
@@ -243,7 +275,6 @@ hr.pex {
     display: flex;
     flex-direction: column;
     padding-top: 1em;
-    padding-bottom: 3em;
     background-color: #070000;
     border-radius: 5px;
     margin: 1em 0;
@@ -266,7 +297,7 @@ hr.pex {
 #countdown-js {
     margin: 5px 5px 10px 5px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 10px;
+    font-size: 14px;
     color: #FFFFFF;
 }
 .margin_bottom {
@@ -300,9 +331,26 @@ hr.pex {
     justify-content: center;
 }
 #timeline p, #live p, #quiz p, #resources p {
-    padding: 0 10px 5px 10px;
+    padding: 0 15px 5px 15px;
 }
-
+.b2top a {
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #05D9E8;
+    padding: 5px 10px;
+    width: 100%;
+}
+.b2top a:hover {
+    background-color: #05D9E8;
+    color: #070000;
+}
+.b2top {
+    border: 2px solid #05D9E8;
+    border-radius: 5px;
+    margin-top: 25px;
+}
 /********* Live/Quiz *********/
 
 /********* Resources *********/
@@ -341,7 +389,7 @@ hr.pex {
     width: 260px;
     height: fit-content;
     z-index: 1;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 .card-content {
     color: #FFFFFF;
