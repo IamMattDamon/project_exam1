@@ -82,13 +82,14 @@ p {
 }
 .header-logo img {
     height: auto;
-    min-width: 200px;
-    max-width: 320px;
-    padding: 10px 5px 2px 5px;
+    max-width: 200px;
+    padding: 10px 20px 0 0;
 }
 .header-logo {
     display: flex;
+    flex: 1;
     justify-content: center;
+    margin-top: 5px;
 }
 .menu ul li {
     text-decoration: none;
@@ -108,12 +109,38 @@ p {
     color: #A6033F;
 }
 .menu ul {
-    padding: 0;
+
     list-style-type: none;
 }
-.menu {
+nav {
+    display: none;
+}
+#hamburger-menu {
+    display: none;
+}
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+.fa-bars {
+    color: #FFFFFF;
+}
+.fas {
+    font-size: 24px;
+}
+.dropdown {
     display: flex;
     justify-content: center;
+    margin: 10px 0 10px 0;
+}
+.hamburger {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 13px;
+    height: 27px;
+    width: 27px;
+    cursor: pointer;
+    transition: all 1s cubic-bezier(.19, 1, .22, 1);
 }
 
 /********* Footer *********/

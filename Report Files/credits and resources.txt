@@ -1,0 +1,5 @@
+Newsletter form:
+https://www.w3schools.com/howto/howto_css_newsletter.asp
+
+Gradient background:
+https://cssgradient.io/gradient-backgrounds/
