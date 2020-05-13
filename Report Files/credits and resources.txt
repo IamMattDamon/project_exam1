@@ -3,3 +3,6 @@ https://www.w3schools.com/howto/howto_css_newsletter.asp
 
 Gradient background:
 https://cssgradient.io/gradient-backgrounds/
+
+Image page toggle menu ('More Images'):
+https://alligator.io/css/collapsible/
