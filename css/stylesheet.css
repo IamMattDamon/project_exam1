@@ -254,13 +254,12 @@ h3.centered.white {
     z-index: 1;
     display: flex;
     flex-direction: column;
-    height: 320px;
 }
 .banner-txt {
     z-index: 2;
     display: flex;
     flex-direction: column;
-    height: 320px;
+    height: 400px;
     
 }
 .bannerh1 {
@@ -279,18 +278,15 @@ h3.centered.white {
     background-color: rgba(15, 15, 15, 0.63);
     display: flex;
     justify-content: center;  
-    font-size: 20px;  
+    font-size: 20px; 
+    margin: 0;
+    padding: 5px 0 5px 0; 
 }
 .bannerbtn {
     display: flex;
     justify-content: center;
     margin: 1.5em 1em;
 }
-.bannerh2 {
-    margin: 0;
-    padding: 5px 0 5px 0;
-}
-
 /****** Main background ******/
 .main-background {
     background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
@@ -444,8 +440,9 @@ h3.centered.white {
 #resources {
     padding-bottom: 50px;
 }
-#launch, #timeline, #live, #quiz, #resources {
+#launch, #timeline, #live, #quiz, #resources, #vid-gallery {
     padding-top: 25px;
+    padding-bottom: 25px;
 }
 /***************************
 ******** IMAGE PAGE ********
@@ -453,7 +450,7 @@ h3.centered.white {
 
 /******** Banner ***********/
 .images-banner {
-    background: url('../images/image-banner.png');
+    background: url('../images/hubbleimg7.jpg');
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -568,6 +565,71 @@ input[type=checkbox] {
 ******* VIDEOS PAGE ********
 ****************************/
 
+/**** Videos - Banner ****/
+.videos-banner {
+    background: url(../images/hubbleimg22.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    height: auto;
+}
+.vid-gallery {
+    display: flex;
+    flex-direction: column;
+}
+.vid-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+    margin-top: 25px;
+}
+.vid-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+    margin-left: 8px;
+}
+
+.vid-content-top h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+.vid-content-top h3 {
+    margin: 10px 5px;
+    max-width: fit-content;
+}
+.vid-content-top p {
+    padding: 2px 5px 5px 2px;
+    margin-bottom: 4px;
+}
+.yt-link-button {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 25px 0;
+}
+.vid-content-top {
+    padding-left: 5px;
+    background-color: #005678;
+}
+iframe.yt-embed {
+    width: 300px;
+    height: 245px;
+}
+@media screen and (min-width: 600px) {
+    iframe.yt-embed {
+        width: 400px;
+        height: 345px;
+    }
+  }
 /***************************
 ******** NEWS PAGE ********
 ****************************/
