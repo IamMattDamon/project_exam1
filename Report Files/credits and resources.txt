@@ -8,3 +8,7 @@ Images.html page -> toggle menu code for 'More Images' collapsible menu taken fr
 https://alligator.io/css/collapsible/
 This one was used in order to implement a pure HTML/CSS collapse menu without any JS. I 
 could have played around with it, but already behind schedule, so had to sort of rush through this particular section in order to get project on schedule again.
+
+Image page - Image gallery section. Responsive grid code taken from w3schools:
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_grid_responsive
+
