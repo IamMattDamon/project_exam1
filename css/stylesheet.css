@@ -507,15 +507,15 @@ input[type=checkbox] {
     background: #070000;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
-    padding: .5rem 1rem;
 }
 .collapsible-content {
     max-height: 0px;
     overflow: hidden;
     transition: max-height .25s ease-in-out;
+    margin-bottom: 25px;
 }
 .toggle:checked + .lbl-toggle + .collapsible-content {
-    max-height: 500vh;
+    max-height: 600vh;
 }
 .toggle:checked + .lbl-toggle::before {
     transform: rotate(90deg) translateX(-3px);
@@ -523,15 +523,6 @@ input[type=checkbox] {
 .toggle:checked + .lbl-toggle {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-}
-.img {
-    margin: 15px 5px;
-}
-.img img {
-    width: 300px;
-    height: auto;
-    border: 2px solid #8B58BC;
-
 }
 .gallery {
     display: flex;
