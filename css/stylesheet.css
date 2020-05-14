@@ -538,6 +538,41 @@ input[type=checkbox] {
     flex-direction: column;
     justify-content: center;
 }
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.gallery-column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+.gallery-column img {
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%;
+    border: 1px solid #8B58BC;
+}
+.gallery-collapsible {
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .gallery-column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .gallery-column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
 /***************************
 ******* VIDEOS PAGE ********
 ****************************/
@@ -548,4 +583,12 @@ input[type=checkbox] {
 
 /***************************
 ******* CONTACT PAGE *******
+****************************/
+
+/***************************
+******* LAUNCH PAGE ********
+****************************/
+
+/***************************
+******* MEDIA CODING *******
 ****************************/
