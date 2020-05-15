@@ -641,8 +641,13 @@ iframe.yt-embed {
     z-index: 1;
     display: flex;
     flex-direction: column;
-
 }
+#next-launch, #upcoming-launch, #comp-launch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 /***************************
 ******* CONTACT PAGE *******
