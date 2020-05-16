@@ -1,2 +1,5 @@
 Programming notes for report:
 
+Looking at my planned 'Image of the Day' section, I had this idea where the image inside the banner would be updated each day with a new image and a download button below. I looked through various sources and quickly figured out that I was way out of my debth in terms of knowledge. The solution became a simple button with a direct link. Not really what I wanted here, but that's all I can do for now. Maybe with time when my skillset is better, I will be able to make something of this.
+
+
