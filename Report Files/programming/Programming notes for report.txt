@@ -1,5 +1,9 @@
 Programming notes for report:
 
-Looking at my planned 'Image of the Day' section, I had this idea where the image inside the banner would be updated each day with a new image and a download button below. I looked through various sources and quickly figured out that I was way out of my debth in terms of knowledge. The solution became a simple button with a direct link. Not really what I wanted here, but that's all I can do for now. Maybe with time when my skillset is better, I will be able to make something of this.
+Looking at my planned 'Image of the Day' section, I had this idea where the image inside the banner would be updated each day with a new image and a download button below. I looked through various sources and quickly figured out that I was way out of my debth in terms of knowledge. It looks like most are built with Python and C#. Some were made with React, but we have not touched that either, so whatever I do would be pure copy/paste and not my own work, so I skipped it entirely.
+
+The solution became a simple button with a direct link to the APOD. Not really what I wanted here, but that's all I can do for now. Maybe with time when my skillset is better, I will be able to make something of this.
+
+
 
 
