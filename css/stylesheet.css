@@ -455,7 +455,7 @@ h3.centered.white {
 #resources {
     padding-bottom: 50px;
 }
-#launch, #timeline, #live, #quiz, #resources, #vid-gallery {
+#contact_form, #launch, #timeline, #live, #quiz, #resources, #vid-gallery {
     padding-top: 25px;
     padding-bottom: 25px;
 }
@@ -681,6 +681,108 @@ iframe.yt-embed {
     height: auto;
 }
 
+.error {
+    display: none;
+    color: #A6033F;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    background: url('../icons/error.svg');
+    background-position: bottom 50% right 0.5rem;
+    background-repeat: no-repeat; 
+    background-size: 0.75rem;
+}
+.success {
+    display: none;
+    color: #39ff14;
+    background: url('../icons/success.svg');
+    background-position: bottom 50% right 0.5rem; 
+    background-repeat: no-repeat; 
+    background-size: 0.75rem;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+#submitMessage {
+    display: none;
+}
+.button1 {
+    padding: 0.2em 0.4em;
+    margin: 0 0.2em 0.2em 0;
+    border: 0.15em solid #05D9E8;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #05D9E8;
+    text-align: center;
+    transition: ease-in 0.2s;
+    background-color: #070000;
+    width: fit-content;
+    cursor: pointer;
+}
+.button1:hover {
+    background-color: #05D9E8;
+    color: #070000;
+    transition: ease-in 0.3s;
+    font-weight: 900;
+    cursor: pointer;
+}
+#contactForm {
+    margin: 0 auto;
+}
+#name, #lastName, #email {
+    width: 300px;
+    height: auto;
+    background-color: #070000;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: 2px solid #05D9E8;
+}
+.small_mg_btm {
+    margin-bottom: 4px;
+}
+#message {
+    width: 300px;
+    height: 175px;
+    background-color: #070000;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: 2px solid #05D9E8;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.button1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+input {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+#contactForm h3 {
+    font-weight: 700;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+}
+#name::placeholder, #lastName::placeholder, #email::placeholder, #message::placeholder {
+    color: #FFFFFF;
+    padding-left: 2px;
+}
+#submitMessage {
+    color: #FFFFFF;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-left: 4px;
+    text-align: center;
+    background-color: #05D9E8;
+    padding: 2px 0 2px 0;
+    color: #070000;
+    margin-bottom: 20px;
+}
 /***************************
 ******* MEDIA CODING *******
 ****************************/

@@ -43,40 +43,60 @@
         <!---- Contact - Banner ---->
         <section id="contact-banner">
             <div class="banner-txt">
-                <h1 class="banner2h1">CONTACT US</h1>
+                <h1 class="banner2h1 white">CONTACT US</h1>
             </div>
         </section>
         <!---- Contact - Contact form ----> 
         <main>
         <div class="main-background">
+         
+        <section id="contact_form">
+        <div class="background-container">
+            <h1 class="centered white">CONTACT FORM</h1>
+        <div class="centered">
+            <img src="../Project Exam/icons/3dots.svg" alt="3 dots" class="dots">
+        </div>    
+        
+            <form id="contactForm">
+                <div id="submitMessage">
+                    MESSAGE DELIVERED
+                </div>
 
-        <div id="submitMessage">
-            Your form was submitted.
+                <div>
+                    <h3 class="white small_mg_btm">FIRST NAME</h3>
+                    <input id="name" placeholder="First name *" />
+                    <div class="error" id="nameError">Please enter your first name</div>
+                    <div class="success" id="nameSuccess">Success</div>
+                </div>
+
+                <div>
+                    <h3 class="white small_mg_btm">LAST NAME</h3>
+                    <input id="lastName" placeholder="Last name (at least 3 characters)*" />
+                    <div class="error" id="lastNameError">Your last name must have at least 3 characters</div>
+                    <div class="success" id="lastNameSuccess">Success</div>
+                </div>
+
+                <div>
+                    <h3 class="white small_mg_btm">EMAIL ADDRESS</h3>
+                    <input id="email" placeholder="Email *" />
+                    <div class="error" id="emailError">Please enter a valid email address</div>
+                    <div class="success" id="emailSuccess">Success</div>
+                </div>
+
+                <div>
+                    <h3 class="white small_mg_btm">MESSAGE</h3>
+                    <textarea id="message" placeholder="Type message here...*"></textarea>
+                    <div class="error" id="messageError">Your message must have at least 6 characters</div>
+                    <div class="success" id="messageSuccess">Success</div>
+                </div>
+
+                <div class="sub_btn">
+                <button type="submit" class="button1">SUBMIT MESSAGE</button>
+                </div>    
+
+            </form>
         </div>
-
-        <form id="contactForm">
-            <div>
-                <input id="name" placeholder="First name *" />
-                <div class="error" id="nameError">Please enter your first name</div>
-            </div>
-
-            <div>
-                <input id="lastName" placeholder="Last name (at least 3 characters)*" />
-                <div class="error" id="lastNameError">Your last name must have at least 3 characters</div>
-            </div>
-
-            <div>
-                <input id="email" placeholder="Email *" />
-                <div class="error" id="emailError">Please enter a valid email address</div>
-            </div>
-
-            <div>
-                <textarea id="message"></textarea>
-                <div class="error" id="messageError">Your message must have at least 6 characters</div>
-            </div>
-
-            <button type="submit">Submit</button>
-        </form>
+        </section>
         </div>
         </main>
         <!---- Index - Back2Top ---->
