@@ -670,6 +670,16 @@ iframe.yt-embed {
 /***************************
 ******* CONTACT PAGE *******
 ****************************/
+#contact-banner {
+    background: url('../images/black-and-gray-digital-device-193003.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    height: auto;
+}
 
 /***************************
 ******* MEDIA CODING *******
