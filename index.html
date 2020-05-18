@@ -191,19 +191,21 @@
             
             <section class="footer_content">
                 <h2 class="centered white">Newsletter</h2>
-                    <form action="/action_page.php" class="newsletter">
-                    <div class="newsletter-container">
-                        <h3 class="centered white">Join our Newsletter!</h3>
-                    </div>
+                    <form id="subscriptionForm">
+                        <div id="subscribedMessage" style="display: none;">
+                            YOU HAVE SUBSCRIBED
+                        </div>
 
-                    <div class="newsletter-container">
-                        <input type="text" placeholder="Your name" name="name" required>
-                        <input type="email" placeholder="Your email address" name="mail" required>
-                    </div>
-                    <div class="newsletter-container">
-                        <input type="submit" value="Subscribe">
-                    </div>
-                    </form>
+                        <div>
+                            <h3 class="white small_mg_btm">EMAIL ADDRESS</h3>
+                            <input id="emailAddress" placeholder="Your email address... *" />
+                            <div class="error" id="emailError">Please enter a valid email address</div>
+                            <div class="success" id="emailSuccess">Success</div>
+                        </div>
+
+                        <div class="subcribe_btn">
+                            <button type="submit" class="button1_sub">SUBSCRIBE</button>
+                        </div>    
             </section>
             
             <section class="footer_content2">
@@ -225,5 +227,6 @@
             </div>
         </section>
         <script src="../Project Exam/js/nextlaunch.js"></script>
+        <script src="../Project Exam/js/newsletter.js"></script>
     </body>
 </html>

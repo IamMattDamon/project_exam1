@@ -181,29 +181,62 @@ nav {
     font-weight: 400;
     font-size: 16px;
 }
-input[type=text], input[type=submit], input[type=email] {
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #05D9E8;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+#subscriptionForm {
+    margin: 0 auto;
+}
+#emailAddress {
+    width: 300px;
+    height: auto;
     background-color: #070000;
     color: #FFFFFF;
+    border-radius: 5px;
+    border: 2px solid #05D9E8;
+    padding-left: 4px;
+    margin-bottom: 10px;
 }
-input[type=submit] {
+#subscribedMessage {
+    color: #FFFFFF;
     font-family: 'Orbitron', sans-serif;
     font-size: 20px;
-    font-weight: 700;
-    color: #05D9E8;
+    font-weight: 900;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-left: 4px;
+    text-align: center;
+    background-color: #05D9E8;
+    padding: 2px 0 2px 0;
+    color: #070000;
+    margin-bottom: 20px;
 }
-input[type=submit]:hover {
+.button1_sub {
+    padding: 0.2em 0.4em;
+    margin: 0 0.2em 0.2em 0;
+    border: 0.15em solid #05D9E8;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #05D9E8;
+    text-align: center;
+    transition: ease-in 0.2s;
+    background-color: #070000;
+    width: 300px;
+    cursor: pointer;
+}
+input#emailAddress {
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+}
+#emailAddress::placeholder {
+    color: rgb(167, 167, 167);
+}
+.button1_sub:hover {
     background-color: #05D9E8;
     color: #070000;
-    transition: 0.3s ease-in;
+    transition: ease-in 0.3s;
+    font-weight: 900;
     cursor: pointer;
 }
 hr.pex {
