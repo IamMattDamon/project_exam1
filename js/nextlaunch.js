@@ -1,8 +1,8 @@
 const url = 'https://api.spacexdata.com/v3/launches/upcoming';
 
 fetch(url)
-.then(function(resp) {
-    return resp.json();    
+.then(function(response) {
+    return response.json();    
 })
 .then(function(data) {
     return launches(data);
@@ -32,8 +32,8 @@ function nextLaunchCountdown(data) {
             document.getElementById('minutes').innerHTML = minutes;
             document.getElementById('seconds').innerHTML = seconds;   
         }  else if (data.tbd === true) {
-            document.getElementById('countdown').innerHTML = "<h3>Launch is delayed</h3>" +
-                                                             "<h3>New time and date is to be determined</h3>" +
+            document.getElementById('countdown').innerHTML = "<h3>This launch has been delayed</h3>" +
+                                                             "<h3>New date to be determined</h3>" +
                                                              "<br/>" ;
         } else {
             document.getElementById('countdown').innerHTML = "<h3>Launch in progress</h3>";
