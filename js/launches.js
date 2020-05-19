@@ -26,7 +26,7 @@ async function fetchAPI() {
 
 fetchAPI();
 
-// Convert date formatting
+// Convert date formatting (from same source as countdown)
 function convertDate(launchDate) {
     let date = new Date(launchDate * 1000);
     return date.toLocaleDateString();
