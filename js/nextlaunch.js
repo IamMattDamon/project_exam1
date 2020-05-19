@@ -32,9 +32,8 @@ function nextLaunchCountdown(data) {
             document.getElementById('minutes').innerHTML = minutes;
             document.getElementById('seconds').innerHTML = seconds;   
         }  else if (data.tbd === true) {
-            document.getElementById('countdown').innerHTML = "<h3>This launch has been delayed</h3>" +
-                                                             "<h3>New date to be determined</h3>" +
-                                                             "<br/>" ;
+            document.getElementById('countdown').innerHTML = "<h3>Launch delayed</h3>" +
+                                                             "<h3>New date to be determined</h3>"
         } else {
             document.getElementById('countdown').innerHTML = "<h3>Launch in progress</h3>";
         }
