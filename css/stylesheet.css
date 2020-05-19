@@ -60,6 +60,15 @@ h2 {
     font-weight: 700;
     display: flex;
 }
+h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    display: flex;
+}
+h4 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+}
 .white {
     color: #FFFFFF;
 }
@@ -275,9 +284,7 @@ hr.pex {
     margin-bottom: 50px;
     justify-content: center;
 }
-h3.centered.white {
-    margin-top: 0;
-}
+
 /********* Banner *********/
 
 .index-banner {
@@ -331,9 +338,9 @@ h3.centered.white {
     flex-direction: column;
     padding-top: 1em;
     background-color: #070000;
-    border-radius: 5px;
-    margin: 1em 0;
-    width: 100%;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 95%;
 }
 #launch {
     display: flex;
@@ -489,8 +496,8 @@ h3.centered.white {
     padding-bottom: 50px;
 }
 #contact_form, #launch, #timeline, #live, #quiz, #resources, #vid-gallery {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 /***************************
 ******** IMAGE PAGE ********
@@ -647,7 +654,7 @@ input[type=checkbox] {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #537895;
     border-radius: 5px;
     margin-bottom: 25px;
     margin-right: 10px;
@@ -674,11 +681,20 @@ input[type=checkbox] {
 }
 .vid-content-top {
     padding-left: 5px;
-    background-color: #005678;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 iframe.yt-embed {
-    width: 300px;
-    height: 245px;
+    width: 280px;
+    height: 235px;
+}
+.background-container2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    background-color: #070000;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 99%;
 }
 @media screen and (min-width: 600px) {
     iframe.yt-embed {
@@ -698,14 +714,39 @@ iframe.yt-embed {
     display: flex;
     flex-direction: column;
 }
-#next-launch, #upcoming-launch, #comp-launch {
+#sct_launch {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
-
-
-
+h4.launch-header-small {
+    color: #2575fc;
+    padding-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+h3.launch-header-large {
+    color: #FFFFFF;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+p.launch-details {
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+hr.hr-launch {
+    padding-left: 10px;
+    height: 10px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 89, 92, 0.712);
+}
 
 /***************************
 ******* CONTACT PAGE *******
