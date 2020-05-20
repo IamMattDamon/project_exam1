@@ -10,7 +10,7 @@
 #8B58BC - Fuchsia Blue (Light Purple)
 ************************************/
 
-/********* Global - Buttons ********/
+/********* Global Attributes ********/
 a.button1 {
     display: flex;
     justify-items: center;
@@ -34,6 +34,18 @@ a.button1:hover {
     color: #070000;
     transition: ease-in 0.3s;
     font-weight: 900;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: #070000;
+}
+::-webkit-scrollbar-thumb {
+    background: #537895;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #05D9E8;
 }
 /***********************************/
 html {
@@ -153,6 +165,7 @@ nav {
 }
 
 /********* Footer *********/
+
 .col {
     display: flex;
     flex-direction: column;
@@ -160,7 +173,7 @@ nav {
 .footer_content {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-bottom: 25px;
     justify-content: center;
 }
@@ -226,7 +239,7 @@ nav {
     text-decoration: none;
     font-family: 'Orbitron', sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 20px;
     color: #05D9E8;
     text-align: center;
     transition: ease-in 0.2s;
@@ -397,7 +410,7 @@ hr.pex {
     color: #FFFFFF;
     font-size: 20px;
 }
-.timeline-container p {
+p.timeline-container {
     color: #FFFFFF;
     font-size: 12px;
     font-family: 'Open-Sans', sans-serif;
@@ -407,8 +420,10 @@ hr.pex {
     display: flex;
     justify-content: center;
 }
-#timeline p, #live p, #quiz p, #resources p, #bdimage p {
-    padding: 0 15px 5px 15px;
+#timeline p.centered.white, #live p.centered.white, #quiz p.centered.white, #resources p.centered.white, #bdimage p.centered.white {
+    padding: 0 10px 0 10px;
+    max-width: 80%;
+    margin: 0 auto;
 }
 .b2top a {
     text-decoration: none;
@@ -426,7 +441,6 @@ hr.pex {
 .b2top {
     border: 2px solid #05D9E8;
     border-radius: 5px;
-    margin-top: 25px;
 }
 /********* Live/Quiz *********/
 
@@ -478,11 +492,12 @@ hr.pex {
     border-radius: 15px;
     height: 120px;
 }
+
 .card-content h2 {
     padding-top: 15px;
 }
 .card-content p {
-    padding: 20px 10px 5px 10px;
+    padding: 0 20px 20px 20px;
 }
 .card-content a {
     text-decoration: none;
@@ -751,14 +766,17 @@ hr.hr-launch {
     width: 100%;
     margin-bottom: 0;
 }
-.next-launch, .upcoming-launches {
+.next-launch, .upcoming-launches, .completed-launches {
     background: radial-gradient(circle, rgba(11,29,61,1) 0%, rgba(27,27,27,1) 100%);
     border-radius: 10px;
     padding: 10px 10px;
     margin: 10px 10px;
 }
-
-.upcoming-container {
+.upcoming-launches, .completed-launches {
+    max-height: 75vh;
+    overflow-y: scroll;
+}
+.upcoming-container, .completed-container {
     position: relative;
     margin-bottom: 20px;
 }
@@ -794,6 +812,7 @@ h3.dropdown-btn.centered:hover {
     transition: max-height .25s ease-in-out;
     margin-bottom: 10px;
 }
+
 /***************************
 ******* CONTACT PAGE *******
 ****************************/

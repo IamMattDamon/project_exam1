@@ -121,7 +121,7 @@ function arrayNextLaunch(nextLaunch) {
             for (let i = 1; i < upcomingLaunches.length; i++) {
                 html += `
                         <div class="upcoming-container">
-                        <input type="checkbox" id="ul_toggle${i}" class="toggle"/>
+                        <input type="checkbox" id="ul_toggle${i}" class="toggle">
                         <label class="dropdown-btn" for="ul_toggle${i}">
                             <h3 class="dropdown-btn centered">${upcomingLaunches[i].mission_name}</h3>
                         </label>
@@ -157,9 +157,41 @@ function arrayNextLaunch(nextLaunch) {
             
         }
 
-// Past launches section
+        // Past launches section
+        function arrayPastLaunches(completedLaunches) {
+            const completedLaunchesContainer = document.querySelector(".completed-launches");
 
+            let html = "";
 
+            for (var i = completedLaunches.length -1; i >= 0; i--) {
+                html += `
+                        <div class="completed-container">
+                        <input type="checkbox" id="ul_toggle${i}" class="toggle">
+                        <label class="dropdown-btn" for="ul_toggle${i}">
+                            <h3 class="dropdown-btn centered">${completedLaunches[i].mission_name}</h3>
+                        </label>
+                        <div class="dropdown-content">
+                        <div class="completed-data">
+                            <h4 class="launch-header-small">DATE</h4>
+                                <hr class="hr-launch">
+                                <p class="launch-details">${convertDate(completedLaunches[i].launch_date_unix)}</p>
+                            <h4 class="launch-header-small">ROCKET</h4>
+                                <hr class="hr-launch">
+                                <p class="launch-details">${completedLaunches[i].rocket.rocket_name}</p>
+                            <h4 class="launch-header-small">LAUNCH SITE</h4>
+                                <hr class="hr-launch">
+                                <p class="launch-details">${completedLaunches[i].launch_site.site_name}</p>
+                            <h4 class="launch-header-small">DETAILS</h4>
+                                <hr class="hr-launch">
+                                <p class="launch-details">${completedLaunches[i].details}</p>
+                        </div>
+                        </div>
+                        </div>
+                        `;
+            }
+
+            completedLaunchesContainer.innerHTML = html;
+        }
 
 
 
