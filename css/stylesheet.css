@@ -239,7 +239,7 @@ nav {
     text-decoration: none;
     font-family: 'Orbitron', sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
     color: #05D9E8;
     text-align: center;
     transition: ease-in 0.2s;
@@ -371,10 +371,12 @@ hr.pex {
 }
 #countdown {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
     color: #FFFFFF;
     display: flex;
     justify-content: center;
+}
+#countdown td {
+    font-size: 0.8em;
 }
 .margin_bottom {
     margin-bottom: 25px;

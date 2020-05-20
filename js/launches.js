@@ -39,6 +39,29 @@ function arrayNextLaunch(nextLaunch) {
     const nextLaunchContainer = document.querySelector(".next-launch");
     
     let html = "";
+
+    html += `   
+    <h4 class="launch-header-small">NEXT LAUNCH</h4>
+        <hr class="hr-launch">
+            <div id="countdown">
+                <table>
+                    <tr>
+                    <td>weeks</td>
+                    <td>days</td>
+                    <td>hours</td>
+                    <td>mins</td>
+                    <td>secs</td>
+                    </tr>
+                    <tr class="nums">
+                    <th id="weeks"></th>
+                    <th id="days"></th>
+                    <th id="hours"></th>
+                    <th id="minutes"></th>
+                    <th id="seconds"></th>
+                    </tr>
+                </table>
+            </div>
+        `;
     
     html += `<h4 class="launch-header-small">MISSION</h4>
             <hr class="hr-launch">
@@ -56,26 +79,6 @@ function arrayNextLaunch(nextLaunch) {
             <hr class="hr-launch">
             <p class="launch-details">${nextLaunch.details}</p>            
             `;
-
-    html += `<div id="countdown">
-                <table>
-                <tr>
-                <td>weeks</td>
-                <td>days</td>
-                <td>hours</td>
-                <td>mins</td>
-                <td>secs</td>
-                </tr>
-                <tr class="nums">
-                <th id="weeks"></th>
-                <th id="days"></th>
-                <th id="hours"></th>
-                <th id="minutes"></th>
-                <th id="seconds"></th>
-                </tr>
-                </table>
-                </div>
-                `;
 
     nextLaunchContainer.innerHTML = html;
 
