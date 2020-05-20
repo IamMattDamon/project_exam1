@@ -743,21 +743,57 @@ p.launch-details {
     margin-top: 2px;
 }
 hr.hr-launch {
-    padding-left: 10px;
+    padding-left: 15px;
     height: 10px;
     border: 0;
-    box-shadow: inset 0 12px 12px -12px rgba(0, 98, 245, 0.712);
+    box-shadow: inset 0 12px 12px -12px rgba(0, 140, 255, 0.664);
     display: inline-block;
     width: 100%;
     margin-bottom: 0;
 }
-.next-launch {
+.next-launch, .upcoming-launches {
     background: radial-gradient(circle, rgba(11,29,61,1) 0%, rgba(27,27,27,1) 100%);
     border-radius: 10px;
     padding: 10px 10px;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 10px;
 }
 
+.upcoming-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.ul_toggle {
+    display: none;
+}
+.ul_toggle:checked + .dropdown-btn + .upcoming-data {
+    max-height: 100%;
+}
+.dropdown-btn {
+    display: block;
+}
+h3.dropdown-btn.centered {
+    background-color: #070000;
+    border: 2px solid #05D9E8;
+    border-radius: 10px;
+    padding: 5px 5px;
+    color: #05D9E8;
+}
+h3.dropdown-btn.centered:hover {
+    background-color: #05D9E8;
+    color: #070000;
+    transition: ease-in 0.3s;
+    cursor: pointer;
+}
+.toggle:checked + .dropdown-btn + .dropdown-content {
+    max-height: 600vh;
+}
+.dropdown-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+    margin-bottom: 10px;
+}
 /***************************
 ******* CONTACT PAGE *******
 ****************************/
