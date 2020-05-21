@@ -28,6 +28,7 @@ a.button1 {
     transition: ease-in 0.2s;
     background-color: #070000;
     width: fit-content;
+    box-shadow: 2px 4px 8px 0px #0B325E, 2px 2px 8px 2px rgba(238, 238, 238, 0.288)
 }
 a.button1:hover {
     background-color: #05D9E8;
@@ -313,10 +314,12 @@ hr.pex {
     display: flex;
     flex-direction: column;
     height: 350px;
+    justify-content: center;
+    margin: 0 auto;
     
 }
 .bannerh1 {
-    background-color: rgba(77, 5, 232, 0.55);
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
     text-align: center;
     padding: 10px 2px 10px 2px;
     display: flex;
@@ -325,15 +328,22 @@ hr.pex {
     margin: 0;
     font-size: 24px;
 }
-.bannerh2 {
+.bannertop, .bannerbtm, .images-banner-txt {
     text-align: center;
     color: #FFFFFF;
-    background-color: rgba(46, 49, 49, 0.35);
     display: flex;
-    justify-content: center;  
-    font-size: 20px; 
-    margin: 0;
-    padding: 5px 0 5px 0; 
+    justify-content: center;
+    font-size: 24px; 
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 0;
+    color: #01012B;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #D1F7FF 0px 0px 20px, #D1F7FF 0px 0px 30px, #D1F7FF 0px 0px 40px, #D1F7FF 0px 0px 50px, #D1F7FF 0px 0px 75px, 1px 1px 1px rgba(206,89,55,0);
+}
+.images-banner-txt {
+
+}
+.bannerbtm {
+    margin-top: 2px;
 }
 .bannerbtn {
     display: flex;
@@ -345,6 +355,10 @@ hr.pex {
     background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
     z-index: 1;
 }
+.main-background-filter {
+    background: rgba(31, 31, 31, 0.178);
+    z-index: 2;
+}
 /********* Launch *********/
 .background-container {
     display: flex;
@@ -354,12 +368,14 @@ hr.pex {
     border-radius: 10px;
     margin: 0 auto;
     width: 95%;
+    box-shadow: 11px 14px 23px 0px rgba(199,199,199,0.75);
+    -webkit-box-shadow: 11px 14px 23px 0px rgba(199,199,199,0.75);
+    -moz-box-shadow: 11px 14px 23px 0px rgba(199,199,199,0.75);
 }
 #launch {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 25px;
 }
 .centered {
     display: flex;
@@ -482,7 +498,7 @@ p.timeline-container {
     width: 260px;
     height: fit-content;
     z-index: 1;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 .card-content {
     color: #FFFFFF;
@@ -513,8 +529,8 @@ p.timeline-container {
     padding-bottom: 50px;
 }
 #contact_form, #launch, #timeline, #live, #quiz, #resources, #vid-gallery {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 /***************************
 ******** IMAGE PAGE ********
@@ -522,7 +538,7 @@ p.timeline-container {
 
 /******** Banner ***********/
 .images-banner {
-    background: url('../images/hubbleimg7.jpg');
+    background: url('../images/images_banner2.jpg');
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -723,13 +739,15 @@ iframe.yt-embed {
 ******** LAUNCH PAGE *******
 ****************************/
 .launch-banner {
-    background: url('../images/background3.jpg');
+    background-image: url('../images/background6.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    height: auto;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
+    height: 350px;
+}
+.launch-banner-container {
+    height: 350px;
+    margin: 0 auto;
 }
 #sct_launch {
     display: flex;
@@ -782,7 +800,6 @@ hr.hr-launch {
     position: relative;
     margin-bottom: 20px;
 }
-
 .ul_toggle {
     display: none;
 }
@@ -935,3 +952,44 @@ input {
 /***************************
 ******* MEDIA CODING *******
 ****************************/
+@media screen and (min-width: 600px) {
+    nav.menu ul li {
+        display: inline-block;
+        padding: 0 1em 1em 1em;
+    }
+    .header-logo {
+        padding-top: 12px;
+        padding-left: 1em;
+    }
+    .hamburger {
+        top: 33px;
+        right: 20px;
+    }
+    .fas {
+        font-size: 30px;
+    }
+    #launch .background-container {
+        width: 75%;
+        margin-top: 2em;
+    }
+    #resources .background-container {
+        margin-bottom: 2em;
+    }
+    #timeline .background-container, #live .background-container, #timeline .background-container, #quiz .background-container, #resources .background-container {
+        width: 75%;
+    }
+}
+/*********  BANNERS *********/
+@media screen and (min-width: 530px) {
+    .launch-banner {
+        height: 450px;
+    }
+    .launch-banner-container {
+        height: 450px;
+    }
+}
+@media screen and (min-width: 800px) {
+    .banner-txt {
+        height: 450px;
+    }
+}
