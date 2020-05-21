@@ -152,7 +152,6 @@ nav {
 .dropdown {
     display: flex;
     justify-content: center;
-    margin: 10px 0 10px 0;
 }
 .hamburger {
     display: block;
@@ -298,7 +297,9 @@ hr.pex {
     margin-bottom: 50px;
     justify-content: center;
 }
-
+#footer {
+    background-color: #070000;
+}
 /********* Banner *********/
 
 .index-banner {
@@ -495,7 +496,7 @@ p.timeline-container {
     width: 260px;
     height: fit-content;
     z-index: 1;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 .card-content {
     color: #FFFFFF;
@@ -508,7 +509,7 @@ p.timeline-container {
     height: 120px;
 }
 
-.card-content h2 {
+.card-content h3 {
     padding-top: 15px;
 }
 .card-content p {
@@ -529,13 +530,16 @@ p.timeline-container {
     padding-top: 25px;
     padding-bottom: 25px;
 }
+.dots {
+    margin-bottom: 15px;
+}
 /***************************
 ******** IMAGE PAGE ********
 ****************************/
 
 /******** Banner ***********/
 .images-banner {
-    background: url('../images/images_banner2.jpg');
+    background: url('../images/asteroid_explosion.png');
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -660,12 +664,9 @@ input[type=checkbox] {
 
 /**** Videos - Banner ****/
 .videos-banner {
-    background: url(../images/hubbleimg22.jpg);
+    background: url(../images/background7.gif);
     background-size: cover;
     background-position: center;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
     height: auto;
 }
 .vid-gallery {
@@ -958,26 +959,7 @@ input {
 /***************************
 ******* MEDIA CODING *******
 ****************************/
-@media screen and (min-width: 600px) {
-    nav.menu ul li {
-        display: inline-block;
-        padding: 0 1em 1em 1em;
-    }
-    .header-logo {
-        padding-top: 12px;
-        padding-left: 1em;
-    }
-    .hamburger {
-        top: 33px;
-        right: 20px;
-    }
-    .fas {
-        font-size: 30px;
-    }
-    #resources .background-container {
-        margin-bottom: 2em;
-    }
-}
+
 /*****************  BANNERS ******************/
 @media screen and (min-width: 530px) {
     .launch-banner, .launch-banner-container {
@@ -1005,6 +987,11 @@ input {
         height: 450px;
     }
 }
+@media screen and (min-width: 1200px) {
+    .banner-txt {
+        height: 550px;
+    }
+}
 /*********** INDEX *******************/
 @media screen and (min-width: 550px) {
     #countdown td {
@@ -1014,9 +1001,56 @@ input {
         max-width: 460px;
     }
 }
+@media screen and (min-width: 600px) {
+    a.button1 {
+        font-size: 1.2em;
+        padding: 0.2em 0.8em;
+    }
+    .header-logo img {
+        max-width: 250px;
+    }
+    nav.menu ul li {
+        display: inline-block;
+        padding: 0 1em 1em 1em;
+    }
+    .header-logo {
+        padding-top: 12px;
+        padding-left: 1em;
+    }
+    .hamburger {
+        top: 40px;
+        right: 20px;
+    }
+    .fas {
+        font-size: 30px;
+    }
+    #resources .background-container {
+        margin-bottom: 2em;
+    }
+    h1.bannerh1 {
+        font-size: 30px;
+    }
+    h2.white {
+        font-size: 1.5em;
+    }
+    .dots {
+        height: 50px;
+        width: 70px;
+    }
+    #timeline p.centered.white, #live p.centered.white, #quiz p.centered.white, #resources p.centered.white, #bdimage p.centered.white {
+        font-weight: 400;
+        font-size: 1.2em;
+    }
+}
 @media screen and (min-width: 800px) {
     #launch .background-container, #timeline .background-container, #live .background-container, #quiz .background-container, #resources .background-container {
         max-width: 775px;
     }
-
+    #countdown tr {
+        font-size: 1.5em;
+    }
+    a.button1 {
+        font-size: 1.2em;
+        padding: 0.2em 1em;
+    }
 }
