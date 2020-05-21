@@ -339,9 +339,6 @@ hr.pex {
     color: #01012B;
     text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #D1F7FF 0px 0px 20px, #D1F7FF 0px 0px 30px, #D1F7FF 0px 0px 40px, #D1F7FF 0px 0px 50px, #D1F7FF 0px 0px 75px, 1px 1px 1px rgba(206,89,55,0);
 }
-.images-banner-txt {
-
-}
 .bannerbtm {
     margin-top: 2px;
 }
@@ -376,6 +373,9 @@ hr.pex {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+#launch tr {
+    font-weight: bold;
 }
 .centered {
     display: flex;
@@ -434,10 +434,7 @@ p.timeline-container {
     font-family: 'Open-Sans', sans-serif;
     padding: 0 10px 5px 10px;
 }
-#timeline {
-    display: flex;
-    justify-content: center;
-}
+
 #timeline p.centered.white, #live p.centered.white, #quiz p.centered.white, #resources p.centered.white, #bdimage p.centered.white {
     padding: 0 10px 0 10px;
     max-width: 80%;
@@ -669,7 +666,6 @@ input[type=checkbox] {
     z-index: 1;
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
     height: auto;
 }
 .vid-gallery {
@@ -729,12 +725,16 @@ iframe.yt-embed {
     margin: 0 auto;
     width: 99%;
 }
+#vid-gallery .background-container {
+    max-width: 1337px;
+}
 @media screen and (min-width: 600px) {
     iframe.yt-embed {
         width: 400px;
         height: 345px;
     }
   }
+
 /***************************
 ******** LAUNCH PAGE *******
 ****************************/
@@ -831,7 +831,13 @@ h3.dropdown-btn.centered:hover {
     transition: max-height .25s ease-in-out;
     margin-bottom: 10px;
 }
-
+#sct_launch .background-container {
+    max-width: 600px;
+    margin-top: 25px;
+}
+#sct_launch .background-container.bottom {
+    margin-bottom: 25px;
+}
 /***************************
 ******* CONTACT PAGE *******
 ****************************/
@@ -968,28 +974,49 @@ input {
     .fas {
         font-size: 30px;
     }
-    #launch .background-container {
-        width: 75%;
-        margin-top: 2em;
-    }
     #resources .background-container {
         margin-bottom: 2em;
     }
-    #timeline .background-container, #live .background-container, #timeline .background-container, #quiz .background-container, #resources .background-container {
-        width: 75%;
+}
+/*****************  BANNERS ******************/
+@media screen and (min-width: 530px) {
+    .launch-banner, .launch-banner-container {
+        height: 450px;
     }
 }
-/*********  BANNERS *********/
-@media screen and (min-width: 530px) {
-    .launch-banner {
-        height: 450px;
+@media screen and (min-width: 715px) {
+    .launch-banner, .launch-banner-container {
+            height: 600px;
     }
-    .launch-banner-container {
-        height: 450px;
+}
+@media screen and (min-width: 950px) {
+    .launch-banner, .launch-banner-container {
+            height: 700px;
+    }
+}
+@media screen and (min-width: 1050px) {
+    .launch-banner, .launch-banner-container {
+            max-height: 700px;
+            background-position: bottom;
     }
 }
 @media screen and (min-width: 800px) {
     .banner-txt {
         height: 450px;
     }
+}
+/*********** INDEX *******************/
+@media screen and (min-width: 550px) {
+    #countdown td {
+        font-size: 1em;
+    }
+    #countdown table {
+        max-width: 460px;
+    }
+}
+@media screen and (min-width: 800px) {
+    #launch .background-container, #timeline .background-container, #live .background-container, #quiz .background-container, #resources .background-container {
+        max-width: 775px;
+    }
+
 }
