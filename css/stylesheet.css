@@ -48,6 +48,16 @@ a.button1:hover {
 ::-webkit-scrollbar-thumb:hover {
     background: #05D9E8;
 }
+.header_icons {
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+}
+.icon {
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
 /***********************************/
 html {
     box-sizing: border-box;
@@ -166,6 +176,9 @@ nav {
     cursor: pointer;
     transition: all 1s cubic-bezier(.19, 1, .22, 1);
 }
+.menu ul {
+    padding-inline-start: 0;
+}
 
 /********* Footer *********/
 
@@ -215,7 +228,7 @@ nav {
     background-color: #070000;
     color: #FFFFFF;
     border-radius: 5px;
-    border: 2px solid #05D9E8;
+    border: 1.25px solid #05D9E8;
     padding-left: 4px;
     margin-bottom: 10px;
 }
@@ -249,6 +262,7 @@ nav {
     background-color: #070000;
     width: 300px;
     cursor: pointer;
+    box-shadow: 2px 4px 8px 0px #0B325E, 2px 2px 8px 2px rgba(238, 238, 238, 0.288);
 }
 input#emailAddress {
     color: #FFFFFF;
@@ -323,7 +337,7 @@ hr.pex {
     
 }
 .bannerh1 {
-    background-image: linear-gradient( 179.2deg,  rgba(34,34,34,1) 0%, rgb(35, 90, 173) 29.7%, rgba(118,6,166,1) 63.4%, rgba(233,0,64,0.58) 100.1% );
+    background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%);
     padding: 10px 2px 10px 2px;
     display: flex;
     justify-content: center;
@@ -331,6 +345,8 @@ hr.pex {
     margin: 0;
     font-size: 24px;
     text-shadow: 4px 3px 0px #070000;
+    border-bottom: 2px solid #05D9E8;
+    border-top: 2px solid #05D9E8;
 }
 .bannertop, .bannerbtm, .images-banner-txt {
     text-align: center;
@@ -362,6 +378,9 @@ hr.pex {
 .main-background-filter {
     background: rgba(31, 31, 31, 0.178);
     z-index: 2;
+}
+.index-banner .bannerbtn {
+    margin-bottom: 50px;
 }
 /********* Launch *********/
 .background-container {
@@ -474,7 +493,10 @@ p.timeline-container {
     border-radius: 5px;
 }
 /********* Live/Quiz *********/
-
+.live_quiz_wrap #live {
+    display: flex;
+    flex-direction: column;
+}
 /********* Resources *********/
 .card-container {
     display: flex;
@@ -553,8 +575,8 @@ p.timeline-container {
     padding-bottom: 50px;
 }
 #contact_form, #launch, #timeline, #live, #quiz, #resources, #vid-gallery {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .dots {
     margin-bottom: 15px;
@@ -999,7 +1021,9 @@ input {
     color: #070000;
     margin-bottom: 20px;
 }
-
+#contact_form .button1 {
+    margin-bottom: 50px;
+}
 /***************************
 ******* MEDIA CODING *******
 ****************************/
@@ -1039,8 +1063,8 @@ input {
 /*********** INDEX *******************/
 @media screen and (min-width: 450px) {
     .background-container {
-        border-right: 3px ridge #8B58BC;
-        border-bottom: 3px ridge #8B58BC;;
+        border-right: 2px solid #05D9E8;
+        border-bottom: 2px solid #05D9E8;
     }
 }
 
@@ -1082,7 +1106,7 @@ input {
         font-size: 30px;
     }
     h2.white {
-        font-size: 2em;
+        font-size: 1.75em;
     }
     .dots {
         height: 50px;
@@ -1118,6 +1142,10 @@ input {
     #countdown tr {
         font-size: 1.5em;
     }
+    .header_icons {
+        height: 60px;
+        width: 60px;
+    }
 
 }
 @media screen and (min-width: 800px) {
@@ -1134,6 +1162,9 @@ input {
 
     .bannertop, .bannerbtm {
         font-size: 36px;
+    }
+    #contact_form .background-container {
+        max-width: 800px;
     }
 }
 
@@ -1152,9 +1183,11 @@ input {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        padding-left: 25px;
+        padding-right: 25px;
     }
-    .card3 {
-        margin-bottom: 25px;
+    .card1, .card2, .card3 {
+        margin-bottom: 50px;
     }
 }
 @media screen and (min-width: 1050px) {
@@ -1176,6 +1209,11 @@ input {
         justify-content: flex-start;
         flex: 1;
     }
+    .socmedimg {
+        padding: 10px 10px;
+        height: 50px;
+        width: 50px;
+    }
 }
 @media screen and (min-width: 1400px) {
     #sct_launch .background-container {
@@ -1193,5 +1231,25 @@ input {
     }
     #bdimage .background-container, #img-gallery .background-container {
         max-width: 1225px;
+    }
+    .header-logo img {
+        max-width: 350px;
+    }
+    .fas {
+        font-size: 40px;
+    }
+    .hamburger {
+        top: 44px;
+        right: 50px;
+    }
+    .menu a {
+        font-size: 1.65em;
+    }
+    .yt-link-button {
+        margin: 50px 0 50px 0;
+    }
+    a.button1 {
+        font-size: 1.5em;
+        padding: 0.2em 0.8em;
     }
 }
