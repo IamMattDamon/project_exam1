@@ -328,6 +328,7 @@ hr.pex {
     color: #FFFFFF;
     margin: 0;
     font-size: 24px;
+    text-shadow: 4px 3px 0px #070000;
 }
 .bannertop, .bannerbtm, .images-banner-txt {
     text-align: center;
@@ -378,6 +379,9 @@ hr.pex {
     flex-direction: column;
     justify-content: center;
 }
+#launch .background-container {
+    margin-top: 50px;
+}
 #launch tr {
     font-weight: bold;
 }
@@ -417,6 +421,12 @@ hr.pex {
 
 #countdown th {
     font-size: 1.5em;
+}
+#sct_launch.sct_top .background-container {
+    margin-top: 50px;
+}
+#sct_launch.sct_btm .background-container {
+    margin-bottom: 50px;
 }
 /********* Timeline *********/
 .timeline-container {
@@ -837,10 +847,12 @@ h3.dropdown-btn.centered:hover {
 }
 #sct_launch .background-container {
     max-width: 600px;
-    margin-top: 25px;
 }
 #sct_launch .background-container.bottom {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
+}
+#sct_launch .background-container.top {
+    margin-top: 50px;
 }
 /***************************
 ******* CONTACT PAGE *******
@@ -852,7 +864,6 @@ h3.dropdown-btn.centered:hover {
     z-index: 1;
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
     height: auto;
 }
 
@@ -1058,5 +1069,32 @@ input {
     a.button1 {
         font-size: 1.2em;
         padding: 0.2em 1em;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #live .background-container, #quiz .background-container {
+        max-width: 400px;
+    }
+    .live_quiz_wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #sct_launch .background-container {
+        max-width: 450px;
+    }
+    .launches_wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    #sct_launch .background-container {
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 }
