@@ -348,6 +348,9 @@ hr.pex {
     justify-content: center;
     margin: 1.5em 1em;
 }
+#masterheader {
+    margin-bottom: 20px;
+}
 /****** Main background ******/
 .main-background {
     background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
@@ -1040,6 +1043,9 @@ input {
     #timeline p.centered.white, #live p.centered.white, #quiz p.centered.white, #resources p.centered.white, #bdimage p.centered.white {
         font-weight: 400;
         font-size: 1.2em;
+    }
+    .bannertop, .bannerbtm {
+        font-size: 30px;
     }
 }
 @media screen and (min-width: 800px) {
