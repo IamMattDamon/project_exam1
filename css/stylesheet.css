@@ -481,6 +481,11 @@ p.timeline-container {
     flex-direction: column;
     margin: 0 auto;
 }
+.card_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .card1 {
     background-image: url('../images/hubbleimg1.png');
     background-size: cover;
@@ -510,6 +515,12 @@ p.timeline-container {
     height: fit-content;
     z-index: 1;
     margin-bottom: 50px;
+}
+.card1 h3, .card2 h3, .card3 h3 {
+    text-shadow: 2px 2px 0 #070000, 2px -2px 0 #070000, -2px 2px 0 #070000, -2px -2px 0 #070000, 2px 0px 0 #070000, 0px 2px 0 #070000, -2px 0px 0 #070000, 0px -2px 0 #070000;
+}
+.card1 p, .card2 p, .card3 p {
+    text-shadow: 2px 2px 0 #070000, 2px -2px 0 #070000, -2px 2px 0 #070000, -2px -2px 0 #070000, 2px 0px 0 #070000, 0px 2px 0 #070000, -2px 0px 0 #070000, 0px -2px 0 #070000;
 }
 .card-content {
     color: #FFFFFF;
@@ -558,7 +569,6 @@ p.timeline-container {
     z-index: 1;
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
 }
 .banner2h1 {
     background-color: rgba(77, 5, 232, 0.55);
@@ -639,7 +649,7 @@ input[type=checkbox] {
 .gallery-row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 10px;
+    padding: 0 50px;
 }
 .gallery-column {
     flex: 25%;
@@ -657,7 +667,12 @@ input[type=checkbox] {
     padding-left: 10px;
     padding-right: 10px;
 }
-
+#bdimage .background-container.top {
+    margin-top: 50px;
+}
+#img-gallery .background-container.bottom {
+    margin-bottom: 50px;
+}
 @media screen and (max-width: 800px) {
     .gallery-column {
       flex: 50%;
@@ -677,7 +692,7 @@ input[type=checkbox] {
 
 /**** Videos - Banner ****/
 .videos-banner {
-    background: url(../images/background7.gif);
+    background: url(../images/background8.gif);
     background-size: cover;
     background-position: center;
     height: auto;
@@ -741,6 +756,8 @@ iframe.yt-embed {
 }
 #vid-gallery .background-container {
     max-width: 1337px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 @media screen and (min-width: 600px) {
     iframe.yt-embed {
@@ -1007,6 +1024,13 @@ input {
     }
 }
 /*********** INDEX *******************/
+@media screen and (min-width: 450px) {
+    .background-container {
+        border-right: 3px ridge #8B58BC;
+        border-bottom: 3px ridge #8B58BC;;
+    }
+}
+
 @media screen and (min-width: 550px) {
     #countdown td {
         font-size: 1em;
@@ -1058,6 +1082,13 @@ input {
     .bannertop, .bannerbtm {
         font-size: 30px;
     }
+    .menu ul {
+        margin-bottom: 0;
+        align-content: center;
+    }
+    .launch-banner .bannertop {
+        margin-top: 100px;
+    }
 }
 @media screen and (min-width: 800px) {
     #launch .background-container, #timeline .background-container, #live .background-container, #quiz .background-container, #resources .background-container {
@@ -1069,6 +1100,12 @@ input {
     a.button1 {
         font-size: 1.2em;
         padding: 0.2em 1em;
+    }
+    #resources .card1, #resources .card2, #resources .card3 {
+        min-width: 400px;
+    }
+    .bannertop, .bannerbtm {
+        font-size: 36px;
     }
 }
 
@@ -1090,11 +1127,14 @@ input {
     .launches_wrapper {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: flex-start;
     }
     #sct_launch .background-container {
         margin-top: 50px;
         margin-bottom: 50px;
+    }
+    #bdimage .background-container, #img-gallery .background-container {
+        max-width: 1225px;
     }
 }
