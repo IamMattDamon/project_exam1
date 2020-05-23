@@ -173,9 +173,9 @@ nav {
     display: block;
     position: absolute;
     top: 25px;
-    right: 13px;
-    height: 27px;
-    width: 27px;
+    right: 15px;
+    height: 30px;
+    width: 30px;
     cursor: pointer;
     transition: all 1s cubic-bezier(.19, 1, .22, 1);
 }
@@ -1111,10 +1111,10 @@ input {
     }
     nav.menu ul li {
         display: inline-block;
-        padding: 0 1em 1em 1em;
+        padding: 1em 1em;
     }
     .header-logo {
-        padding-top: 12px;
+        padding-top: 10px;
         padding-left: 1em;
     }
     .hamburger {
@@ -1230,6 +1230,9 @@ input {
     .launch-banner {
         background-position: bottom;
     }
+    .hamburger {
+        right: 30px;
+    }
 }
 
 @media screen and (min-width: 900px) {
@@ -1256,6 +1259,12 @@ input {
     .button1.centered {
         margin-top: 25px;
         margin-bottom: 25px;
+    }
+    .fas.fa-bars {
+        font-size: 36px;
+    }
+    .hamburger {
+        top: 35px;
     }
 }
 @media screen and (min-width: 1050px) {
