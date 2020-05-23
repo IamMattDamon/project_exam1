@@ -57,7 +57,10 @@ a.button1:hover {
     padding-top: 20px;
     padding-right: 10px;
 }
-
+i.fas.fa-bars:hover {
+    color: #05D9E8;
+    transition: 0.3s ease-in;
+}
 /***********************************/
 html {
     box-sizing: border-box;
@@ -1048,11 +1051,7 @@ input {
         height: 450px;
     }
 }
-@media screen and (min-width: 715px) {
-    .launch-banner, .launch-banner-container {
-            height: 600px;
-    }
-}
+
 @media screen and (min-width: 950px) {
     .launch-banner, .launch-banner-container {
             height: 700px;
@@ -1174,6 +1173,14 @@ input {
     }
 
 }
+@media screen and (min-width: 715px) {
+    .launch-banner, .launch-banner-container {
+            height: 600px;
+    }
+    .launch-banner .bannertop {
+        margin-top: 200px;
+    }
+}
 @media screen and (min-width: 800px) {
     #launch .background-container, #timeline .background-container, #live .background-container, #quiz .background-container, #resources .background-container {
         max-width: 900px;
@@ -1216,6 +1223,12 @@ input {
     }
     #contactForm .button1 {
         font-size: 20px;
+    }
+    .launch-banner .bannertop {
+        margin-top: 175px;
+    }
+    .launch-banner {
+        background-position: bottom;
     }
 }
 
@@ -1268,6 +1281,11 @@ input {
         padding: 10px 10px;
         height: 50px;
         width: 50px;
+    }
+}
+@media screen and (min-width: 1050px) {
+    .launch-banner .bannertop {
+        margin-top: 100px;
     }
 }
 @media screen and (min-width: 1400px) {
