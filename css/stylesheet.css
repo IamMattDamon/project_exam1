@@ -228,7 +228,7 @@ nav {
     background-color: #070000;
     color: #FFFFFF;
     border-radius: 5px;
-    border: 1.25px solid #05D9E8;
+    border: 2px solid #05D9E8;
     padding-left: 4px;
     margin-bottom: 10px;
 }
@@ -350,7 +350,7 @@ hr.pex {
 hr.over_under {
     border: 0;
     height: 2px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.979), rgba(0, 162, 255, 0.75), rgba(255, 255, 255, 0.979));
+    background-image: linear-gradient(to right, rgba(143, 73, 209, 0.979), rgba(0, 162, 255, 0.75), rgba(196, 92, 170, 0.979));
     padding: 0;
     margin: 0;
 }
@@ -1257,5 +1257,11 @@ input {
     a.button1 {
         font-size: 1.5em;
         padding: 0.2em 0.8em;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    #sct_launch .background-container {
+        max-width: 500px;
     }
 }
