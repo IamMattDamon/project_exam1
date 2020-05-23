@@ -971,7 +971,7 @@ h3.dropdown-btn.centered:hover {
     margin: 0 auto;
 }
 #name, #lastName, #email {
-    width: 300px;
+    width: 280px;
     height: auto;
     background-color: #070000;
     color: #FFFFFF;
@@ -992,7 +992,7 @@ h4.white.small_mg_btm {
     text-shadow: 0 0 5px #D1F7FF;
 }
 #message {
-    width: 300px;
+    width: 280px;
     height: 175px;
     background-color: #070000;
     color: #FFFFFF;
@@ -1094,6 +1094,9 @@ input {
     }
     #countdown table {
         max-width: 460px;
+    }
+    #name, #lastName, #email, #message {
+        width: 350px;
     }
 }
 @media screen and (min-width: 600px) {
@@ -1201,6 +1204,15 @@ input {
     }
     .content-inner .gallery-row {
         padding: 0;
+    }
+    #name, #lastName, #email, #message {
+        width: 450px;
+    }
+    #message {
+        height: 250px;
+    }
+    #contactForm .button1 {
+        font-size: 20px;
     }
 }
 
