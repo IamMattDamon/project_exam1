@@ -1295,6 +1295,9 @@ input {
     .launch-banner {
         height: 750px;
     }
+    .bannerbtn .button1 {
+        font-size: 1.5em;
+    }
 }
 @media screen and (min-width: 1050px) {
     .footer_wrap {
