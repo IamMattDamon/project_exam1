@@ -145,9 +145,9 @@ h2.white {
 }
 .menu a:hover {
     color: #A6033F;
+    transition: 0.3s ease-in;
 }
 .menu ul {
-
     list-style-type: none;
 }
 nav {
@@ -803,13 +803,6 @@ iframe.yt-embed {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-@media screen and (min-width: 600px) {
-    iframe.yt-embed {
-        width: 400px;
-        height: 345px;
-    }
-  }
-
 /***************************
 ******** LAUNCH PAGE *******
 ****************************/
@@ -1386,6 +1379,10 @@ input {
     }
     p.centered.white {
         font-size: 1.5em;
+    }
+    iframe.yt-embed {
+        height: 345px;
+        width: 400px;
     }
 }
 
