@@ -1063,11 +1063,6 @@ input {
     }
 }
 
-@media screen and (min-width: 950px) {
-    .launch-banner, .launch-banner-container {
-            height: 700px;
-    }
-}
 @media screen and (min-width: 1050px) {
     .launch-banner, .launch-banner-container {
             max-height: 700px;
@@ -1159,9 +1154,6 @@ input {
         margin-bottom: 0;
         align-content: center;
     }
-    .launch-banner .bannertop {
-        margin-top: 100px;
-    }
     .footer_content h3, .footer_content2 h3 {
         font-size: 24px;
     }
@@ -1183,14 +1175,6 @@ input {
         width: 60px;
     }
 
-}
-@media screen and (min-width: 715px) {
-    .launch-banner, .launch-banner-container {
-            height: 600px;
-    }
-    .launch-banner .bannertop {
-        margin-top: 200px;
-    }
 }
 @media screen and (min-width: 800px) {
     #launch .background-container, #timeline .background-container, #live .background-container, #quiz .background-container, #resources .background-container {
@@ -1235,9 +1219,7 @@ input {
     #contactForm .button1 {
         font-size: 20px;
     }
-    .launch-banner .bannertop {
-        margin-top: 175px;
-    }
+
     .launch-banner {
         background-position: bottom;
     }
@@ -1257,14 +1239,13 @@ input {
     }
     nav.menu {
         display: flex;
-        flex: 3;
-        justify-content: start;
-        padding-right: 2em;
+        flex: 2;
+        justify-content: center;
+
     }
     .header-logo {
         flex: 1;
-        justify-content: start;
-        padding-left: 3em;
+        justify-content: center;
     }
     label.hamburger {
         display: none;
@@ -1299,6 +1280,23 @@ input {
     }
     .hamburger {
         top: 35px;
+    }
+    .header-logo {
+        flex: 1;
+        justify-content: center;
+    }
+    .dropdown {
+        flex: 2;
+        justify-content: center;
+    }
+    .index-banner, .launch-banner-container, .images-banner, .videos-banner, .contact-banner {
+        height: 750px;
+    }
+    .banner-txt {
+        height: 700px;
+    }
+    .launch-banner {
+        height: 750px;
     }
 }
 @media screen and (min-width: 1050px) {
