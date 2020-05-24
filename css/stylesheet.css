@@ -141,10 +141,11 @@ h2.white {
     color: #FFFFFF;
 }
 .current a {
-    color: #A6033F;
+    color: #05D9E8;
 }
 .menu a:hover {
-    color: #A6033F;
+    color: #070000;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #05D9E8, 0 0 30px #05D9E8, 0 0 40px #05D9E8, 0 0 55px #05D9E8;
     transition: 0.3s ease-in;
 }
 .menu ul {
