@@ -1384,6 +1384,12 @@ input {
         height: 345px;
         width: 400px;
     }
+    .bannertop {
+        font-size: 50px;
+    }
+    .bannerbtn .button1 {
+        font-size: 32px;
+    }
 }
 
 @media screen and (min-width: 1600px) {
