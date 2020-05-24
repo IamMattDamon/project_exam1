@@ -1063,12 +1063,6 @@ input {
     }
 }
 
-@media screen and (min-width: 1050px) {
-    .launch-banner, .launch-banner-container {
-            max-height: 700px;
-            background-position: bottom;
-    }
-}
 @media screen and (min-width: 800px) {
     .banner-txt {
         height: 450px;
