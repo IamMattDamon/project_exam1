@@ -1324,11 +1324,7 @@ input {
         width: 50px;
     }
 }
-@media screen and (min-width: 1050px) {
-    .launch-banner .bannertop {
-        margin-top: 100px;
-    }
-}
+
 @media screen and (min-width: 1400px) {
     #sct_launch .background-container {
         max-width: 450px;
